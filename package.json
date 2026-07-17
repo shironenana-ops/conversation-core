@@ -1,0 +1,19 @@
+{
+  "name": "conversation-core",
+  "version": "0.1.0-alpha.1",
+  "description": "An experimental portable format and reference implementation for conversational context migration.",
+  "type": "module",
+  "bin": { "conversation-core": "./dist/cli.js" },
+  "files": ["dist", "schema", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "check": "npm run build && npm test",
+    "cli": "tsx src/cli.ts"
+  },
+  "engines": { "node": ">=22" },
+  "keywords": ["conversation", "portability", "ai", "cli", "json-schema"],
+  "license": "Apache-2.0",
+  "dependencies": { "ajv": "^8.17.1" },
+  "devDependencies": { "@types/node": "^22.15.0", "tsx": "^4.19.3", "typescript": "^5.8.3", "vitest": "^3.1.1" }
+}
