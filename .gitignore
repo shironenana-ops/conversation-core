@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+coverage/
+data/private/
+data/imports/
+exports/private/
+*.chat-export.json
+conversation_core.json
+*.log
+.DS_Store
