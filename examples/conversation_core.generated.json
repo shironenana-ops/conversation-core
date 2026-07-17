@@ -1,0 +1,139 @@
+{
+  "schema_version": "0.1.0",
+  "core_id": "fixture-001-core",
+  "participants": [
+    {
+      "id": "user_a",
+      "role": "user"
+    },
+    {
+      "id": "assistant_a",
+      "role": "assistant"
+    }
+  ],
+  "interaction_patterns": [
+    {
+      "id": "interaction_pattern-001",
+      "type": "interaction_pattern",
+      "summary": "Connect rapid topic transitions instead of resetting the conversation.",
+      "scope": [
+        "global"
+      ],
+      "status": "active",
+      "confidence": 0.85,
+      "sensitivity": "low",
+      "provenance": [
+        {
+          "conversation_id": "fixture-001",
+          "message_ids": [
+            "m1",
+            "m2"
+          ]
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "callbacks": [
+    {
+      "id": "callback-001",
+      "type": "callback",
+      "summary": "Use the explicitly marked fictional callback only when its scope applies.",
+      "scope": [
+        "casual"
+      ],
+      "status": "active",
+      "confidence": 0.85,
+      "sensitivity": "low",
+      "provenance": [
+        {
+          "conversation_id": "fixture-001",
+          "message_ids": [
+            "m3",
+            "m4"
+          ]
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "tone_transitions": [
+    {
+      "id": "tone_transition-001",
+      "type": "tone_transition",
+      "summary": "When an exchange becomes serious, reduce humor and acknowledge the serious content.",
+      "scope": [
+        "global"
+      ],
+      "status": "active",
+      "confidence": 0.85,
+      "sensitivity": "low",
+      "provenance": [
+        {
+          "conversation_id": "fixture-001",
+          "message_ids": [
+            "m5",
+            "m6"
+          ]
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "boundary-001",
+      "type": "boundary",
+      "summary": "Do not use casual humor or callbacks in formal work output.",
+      "scope": [
+        "work"
+      ],
+      "status": "candidate",
+      "confidence": 0.55,
+      "sensitivity": "low",
+      "provenance": [
+        {
+          "conversation_id": "fixture-001",
+          "message_ids": [
+            "m7"
+          ]
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "repair_preferences": [
+    {
+      "id": "repair_preference-001",
+      "type": "repair_preference",
+      "summary": "Accept corrections in natural language and confirm the resulting change.",
+      "scope": [
+        "global"
+      ],
+      "status": "candidate",
+      "confidence": 0.55,
+      "sensitivity": "low",
+      "provenance": [
+        {
+          "conversation_id": "fixture-001",
+          "message_ids": [
+            "m8"
+          ]
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "metadata": {
+    "source_conversation_ids": [
+      "fixture-001"
+    ],
+    "generated_at": "2026-01-01T00:00:00Z",
+    "generator": "conversation-core/heuristic-v0.1"
+  }
+}
