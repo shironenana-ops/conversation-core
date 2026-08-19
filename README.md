@@ -1,5 +1,7 @@
 # Conversation Core
 
+[![CI](https://github.com/shironenana-ops/conversation-core/actions/workflows/ci.yml/badge.svg)](https://github.com/shironenana-ops/conversation-core/actions/workflows/ci.yml)
+
 Conversation Core is an experimental open format and reference implementation for extracting, reviewing, and migrating conversational patterns and relational context between AI systems.
 
 It is an early open reference implementation. It models reviewable interaction patterns, contextual callbacks, tone transitions, boundaries, repair preferences, confidence, scope, lifecycle, and provenance. Conversational patterns differ from factual memory: they are contextual hypotheses about how an exchange works, not claims about a person or the world.
@@ -50,6 +52,12 @@ Only process logs you have permission to use. Human review is required before mi
 ## Project status
 
 `0.1.0-alpha.1` is experimental. The default extractor is deterministic and offline; it recognizes explicit fixture markers and avoids open-ended personal inference.
+
+## Maintenance
+
+Maintenance focuses on keeping the deterministic offline baseline auditable, expanding cross-target interoperability evidence, and clarifying consent and lifecycle semantics. Contributions are welcome; read [CONTRIBUTING.md](CONTRIBUTING.md) before opening an issue or pull request, and use synthetic, neutral data only.
+
+Near-term maintenance directions are tracked in [ROADMAP.md](ROADMAP.md). Paid or hosted providers may be explored as optional integrations, but the offline workflow and explicit human review remain the required baseline.
 
 ## Prior and related work
 
